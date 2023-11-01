@@ -1,0 +1,128 @@
+body {
+  background: url("./img/fundo10.jpg");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  background-size: cover;
+}
+
+.conteudo {
+  background-color: rgb(248, 212, 218);
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto 0;
+}
+
+#novaTarefa,
+#button-nova-tarefa {
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  padding: 1rem;
+}
+
+#novaTarefa {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+#button-nova-tarefa {
+  background-color: rgb(250, 193, 201);
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#button-nova-tarefa:hover {
+  background-color: rgb(231, 80, 113);
+}
+
+#lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+
+#lista li {
+  list-style-type: none;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lista li:hover {
+  background-color: rgb(231, 80, 113);
+  transition: 0.5s;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#button-ok {
+  border: none;
+  background-color: rgb(73, 180, 73);
+  color: white;
+  padding: 4rem, 8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  order: 1;
+}
+
+#button-remove {
+  border: none;
+  background-color: #cf4444;
+  color: white;
+  padding: 4rem, 8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  order: 3;
+}
+
+.tarefa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(250, 193, 201);
+  color: white;
+  
+}
+
+.tarefa-concluida {
+  background-color: rgb(231, 80, 113);
+  text-decoration: line-through;
+  border-radius: 1rem;
+}
+
+.quebradelinha {
+  max-width:75%; 
+  word-wrap: break-word;
+}
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 1%;
+}
